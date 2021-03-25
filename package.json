@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "name": "web",
+  "version": "1.0.0",
+  "scripts": {
+    "start:db": "json-server -w db.json",
+    "start:parcel": "parcel index.html",
+    "start": "concurrently npm:start:*"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
